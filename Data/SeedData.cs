@@ -12,10 +12,8 @@ namespace Wasla.Data
             var userManager = serviceProvider.GetRequiredService<UserManager<IdentityUser>>();
             var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
 
-            // Ensure database is created
             await context.Database.EnsureCreatedAsync();
 
-            // Ensure roles exist
             var roles = new[] { "Admin", "User" };
             foreach (var role in roles)
             {
@@ -25,7 +23,6 @@ namespace Wasla.Data
                 }
             }
 
-            // Ensure admin user exists
             var adminEmail = "admin@wasla.com";
             var adminUser = await userManager.FindByEmailAsync(adminEmail);
             if (adminUser == null)
@@ -35,7 +32,6 @@ namespace Wasla.Data
                 await userManager.AddToRoleAsync(adminUser, "Admin");
             }
 
-            // Seed Governments, Regions, and Available Regions
             if (!context.Governments.Any())
             {
                 var governments = new List<Government>

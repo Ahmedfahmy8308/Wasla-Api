@@ -10,7 +10,6 @@ namespace Wasla.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[ApiBearerAuth]
     [Authorize(Roles = "Admin")] 
     public class AdminController : ControllerBase
     {
