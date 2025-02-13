@@ -134,7 +134,7 @@ This project is **open-source** and available under the **MIT License**.
 
 ## **Contact & Support**
 For support or inquiries, contact **Ahmed Fahmy** via:
-📩 Email: [ahmedfahmy8308@gmail.com](mailto:ahmedfahmy8308@gmail.com)  
+📩 Email: [fhmy8308@gmail.com](mailto:fhmy8308@gmail.com)  
 🌐 GitHub: [AhmedFahmy8308](https://github.com/Ahmedfahmy8308)
 
 ---
